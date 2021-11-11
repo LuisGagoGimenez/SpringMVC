@@ -16,18 +16,20 @@
                 </tr>
             </thead>
             <tbody>
-                
                 <tr th:each="c : ${clientes}">
-                    <td th:text="${c.nombre}"></td>
-                    <td th:text="${c.apellidos}"></td>
-                    <td th:text="${c.fechaNacimiento}"></td>
-                    <td th:text="${c.dni}"></td>
-                    
-                </tr>
+            
 
-            </tbody>
-        </table>
-        
+                <td th:text="${c.id}"></td>
+                <td th:text="${c.nombre}"></td>
+                <td th:text="${c.apellidos}"></td>
+                <td th:text="${c.fechaNacimiento}"></td>
+                <td th:text="${c.dni}"></td>
+                <td><a th:href="@{/borrarcliente/{id}(id=${c.id})}">Borrar</a></td>
+        </tr>
 
-    </body>
+    </tbody>
+</table>
+
+
+</body>
 </html>

@@ -39,7 +39,7 @@ public class Desafio3Application implements CommandLineRunner{
 		c.setFechaNacimiento(fecha);
 		c.setDni("00011199J");
 		
-		clienteService.save(c);
+		//clienteService.save(c);
 		
 		
 		//clienteService.deleteClient(c);

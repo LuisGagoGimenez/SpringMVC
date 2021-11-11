@@ -4,12 +4,12 @@
         <title>Insert title here</title>
     </head>
     <body>
-        <form th:action="@{/index/mostrarclientes}" th:method="POST" th:object="nuevoCliente">
-            <input type="text">Nombre
-            <input type="text">Apellidos
-            <input type="text">Fecha de nacimiento
-            <input type="text">DNI
-            <button type="submit" class="btn btn-primary">Submit</button>
+        <form th:action="@{/anyadircliente}" th:method="POST" th:object="${nuevoCliente}">
+            <input type="text" name="nombre">Nombre<br>
+            <input type="text" name="apellidos">Apellidos<br>
+            <input type="text" name="fechaNacimiento">Fecha de nacimiento<br>
+            <input type="text" name="dni">DNI<br>
+            <button type="submit" class="btn btn-primary">Añadir</button>
         </form>
     </body>
 </html>
