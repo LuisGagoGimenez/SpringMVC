@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Insert title here</title>
+    </head>
+    <body>
+        <form th:action="@{/index/mostrarclientes}" th:method="POST" th:object="nuevoCliente">
+            <input type="text">Nombre
+            <input type="text">Apellidos
+            <input type="text">Fecha de nacimiento
+            <input type="text">DNI
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </body>
+</html>
